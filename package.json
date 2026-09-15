@@ -1,0 +1,30 @@
+{
+  "name": "webd.-playwright",
+  "version": "1.0.0",
+  "description": "Playwright automation for RCTI+",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:login": "npx playwright test tests/auth/login.specs.ts --project=chrome",
+    "test:login:headed": "npx playwright test tests/auth/login.specs.ts --project=chrome --headed",
+    "test:slack": "npx ts-node run-tests-with-slack.ts",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "localtunnel": "^2.0.2",
+    "ngrok": "^5.0.0-beta.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "openai": "^7.15.0",
+    "playwright": "^1.63.0"
+  }
+}
