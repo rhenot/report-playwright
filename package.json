@@ -1,13 +1,13 @@
 {
-  "name": "webd.-playwright",
+  "name": "webd-playwright",
   "version": "1.0.0",
   "description": "Playwright automation for RCTI+",
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:login": "npx playwright test tests/auth/login.specs.ts --project=chrome",
-    "test:login:headed": "npx playwright test tests/auth/login.specs.ts --project=chrome --headed",
-    "test:slack": "npx ts-node run-tests-with-slack.ts",
+    "test:login": "npx playwright test tests/auth/loginwd.specs.ts --project=chrome",
+    "test:homepage": "npx playwright test tests/Homepage/Homepagewd.specs.ts --project=chrome",
+    "test:slack": "node send-slack-report.js",
     "report": "npx playwright show-report"
   },
   "keywords": [],
