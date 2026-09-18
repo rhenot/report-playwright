@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import 'dotenv/config';
 
 const WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL || '';
-const CHANNEL = process.env.SLACK_CHANNEL || '#report-automate';
+const CHANNEL = process.env.SLACK_CHANNEL || '#reny-report';
 
 async function main() {
   console.log('🏃 Running Playwright tests...\n');

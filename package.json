@@ -7,8 +7,12 @@
     "test": "npx playwright test",
     "test:login": "npx playwright test tests/auth/loginwd.specs.ts --project=chrome",
     "test:homepage": "npx playwright test tests/Homepage/Homepagewd.specs.ts --project=chrome",
-    "test:slack": "node send-slack-report.js",
-    "report": "npx playwright show-report"
+    "test:audio": "npx playwright test tests/Audio/audiowd.specs.ts --project=chrome",
+    "report": "npx playwright show-report",
+    "test:slack": "node test-and-slack.js",
+    "slack:test": "node scripts/send-to-slack.js \"Test message from VS Code\" info",
+    "slack:success": "node scripts/send-to-slack.js \"Test completed successfully\" success",
+    "slack:error": "node scripts/send-to-slack.js \"Test failed\" error"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +23,7 @@
     "@types/node": "^25.6.0",
     "localtunnel": "^2.0.2",
     "ngrok": "^5.0.0-beta.2",
+    "playwright-slack-report": "^1.1.113",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   },

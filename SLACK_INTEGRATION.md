@@ -168,7 +168,7 @@ jobs:
         run: npm run test:slack
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SLACK_CHANNEL: '#test-reports'
+          SLACK_CHANNEL: '#reny-reports'
 ```
 
 ### GitLab CI
@@ -182,7 +182,7 @@ test:
     - npm run test:slack
   variables:
     SLACK_WEBHOOK_URL: $SLACK_WEBHOOK_URL
-    SLACK_CHANNEL: "#test-reports"
+    SLACK_CHANNEL: "#reny-reports"
 ```
 
 ---

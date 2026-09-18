@@ -1,0 +1,2048 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+  Test Automation Report
+  -
+  Web Desktop
+</title>
+
+<style>
+
+/* ==========================================================
+   ROOT
+========================================================== */
+
+:root {
+
+  --navy: #102b57;
+
+  --navy2: #173d70;
+
+  --blue: #0b8fd3;
+
+  --text: #122b55;
+
+  --muted: #61718a;
+
+  --green: #20b557;
+
+  --greenDark: #13783c;
+
+  --greenBg: #edf9f2;
+
+  --red: #ef4444;
+
+  --redBg: #fff0f0;
+
+  --yellow: #f5b21b;
+
+  --yellowBg: #fff8e7;
+
+  --border: #e7edf5;
+
+  --white: #ffffff;
+
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  min-height: 100vh;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+  color: var(--text);
+
+  background:
+
+    radial-gradient(
+      circle at top right,
+      #edf5ff 0,
+      transparent 35%
+    ),
+
+    linear-gradient(
+      135deg,
+      #f7faff 0%,
+      #ffffff 55%,
+      #f4f9ff 100%
+    );
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container {
+
+  max-width: 1500px;
+
+  margin: auto;
+
+  padding:
+    28px
+    28px
+    0;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-bottom: 28px;
+
+}
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+}
+
+.logo {
+
+  font-size: 43px;
+
+  line-height: 1;
+
+  font-weight: 950;
+
+  letter-spacing: -5px;
+
+  color: #10a4df;
+
+}
+
+.logo span {
+
+  color: #e91c57;
+
+}
+
+.logo-sub {
+
+  margin-top: 8px;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #63748c;
+
+  font-weight: 700;
+
+}
+
+.divider {
+
+  width: 1px;
+
+  height: 78px;
+
+  background: #ccd6e4;
+
+}
+
+.title h1 {
+
+  margin: 0;
+
+  font-size: 44px;
+
+  line-height: 1;
+
+  letter-spacing: -1.5px;
+
+}
+
+.title h2 {
+
+  margin:
+    8px
+    0
+    5px;
+
+  font-size: 28px;
+
+}
+
+.subtitle {
+
+  font-size: 18px;
+
+  color: var(--muted);
+
+}
+
+.date-card {
+
+  min-width: 330px;
+
+  padding:
+    20px
+    25px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef6ff,
+      #f7fbff
+    );
+
+  border:
+    1px solid
+    #e1eaf5;
+
+}
+
+.date-top {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+}
+
+.calendar-icon {
+
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 14px;
+
+  background: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 25px;
+
+}
+
+.date-label {
+
+  color: #53657e;
+
+  font-size: 15px;
+
+}
+
+.date-value {
+
+  font-size: 19px;
+
+  font-weight: 750;
+
+  margin-top: 3px;
+
+}
+
+/* ==========================================================
+   MAIN GRID
+========================================================== */
+
+.main-grid {
+
+  display: grid;
+
+  grid-template-columns:
+
+    minmax(270px, .95fr)
+
+    minmax(350px, 1.05fr)
+
+    minmax(350px, 1fr);
+
+  gap: 20px;
+
+}
+
+.card {
+
+  background: white;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 23px;
+
+  box-shadow:
+    0 14px 40px
+    rgba(
+      20,
+      54,
+      95,
+      .08
+    );
+
+}
+
+/* ==========================================================
+   INFO CARD
+========================================================== */
+
+.info-card {
+
+  padding: 30px;
+
+}
+
+.info-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  margin-bottom: 27px;
+
+}
+
+.info-item:last-child {
+
+  margin-bottom: 0;
+
+}
+
+.info-icon {
+
+  width: 58px;
+
+  height: 58px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e9f7ff,
+      #d9efff
+    );
+
+  font-size: 25px;
+
+}
+
+.info-label {
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  margin-bottom: 5px;
+
+}
+
+.info-value {
+
+  color: #53657e;
+
+  font-size: 18px;
+
+}
+
+.project-pill {
+
+  display: inline-flex;
+
+  margin-top: 7px;
+
+  padding:
+    4px
+    10px;
+
+  border-radius: 999px;
+
+  background: #eef5ff;
+
+  color: #315b8d;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+}
+
+/* ==========================================================
+   CHART
+========================================================== */
+
+.chart-card {
+
+  padding:
+    22px
+    28px
+    28px;
+
+  text-align: center;
+
+}
+
+.chart-heading {
+
+  font-size: 15px;
+
+  color: #6a7890;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+}
+
+.donut {
+
+  width: min(
+    360px,
+    100%
+  );
+
+  aspect-ratio: 1;
+
+  margin:
+    8px
+    auto
+    24px;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+        #20b557 0% 91.22807017543859%,
+        #ef4444 91.22807017543859% 94.73684210526315%,
+        #f5b21b 94.73684210526315% 99.99999999999999%,
+        #dbe4ef 99.99999999999999% 100%
+      );
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.donut::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 68%;
+
+  height: 68%;
+
+  border-radius: 50%;
+
+  background: white;
+
+}
+
+.donut-content {
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+.donut-number {
+
+  font-size: 58px;
+
+  font-weight: 850;
+
+  line-height: 1;
+
+}
+
+.donut-label {
+
+  margin-top: 8px;
+
+  font-size: 20px;
+
+  font-weight: 650;
+
+  color: #5d6d85;
+
+}
+
+.donut-rate {
+
+  margin-top: 12px;
+
+  font-size: 19px;
+
+  font-weight: 800;
+
+  color:
+    #c62828;
+
+}
+
+.legend {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap:
+    18px
+    28px;
+
+}
+
+.legend-item {
+
+  color: #56667f;
+
+  font-size: 15px;
+
+}
+
+.legend-item b {
+
+  color: var(--text);
+
+}
+
+.dot {
+
+  width: 13px;
+
+  height: 13px;
+
+  display: inline-block;
+
+  border-radius: 50%;
+
+  margin-right: 7px;
+
+}
+
+.dot-green {
+
+  background:
+    var(--green);
+
+}
+
+.dot-red {
+
+  background:
+    var(--red);
+
+}
+
+.dot-yellow {
+
+  background:
+    var(--yellow);
+
+}
+
+.dot-gray {
+
+  background:
+    #cbd5e1;
+
+}
+
+/* ==========================================================
+   RESULTS
+========================================================== */
+
+.result-column {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+}
+
+.result {
+
+  min-height: 137px;
+
+  padding: 25px;
+
+  border-radius: 19px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.result-left {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+}
+
+.result-icon {
+
+  width: 64px;
+
+  height: 64px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  font-size: 39px;
+
+  font-weight: 900;
+
+}
+
+.result-title {
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+}
+
+.result-number {
+
+  margin-top: 2px;
+
+  font-size: 38px;
+
+  line-height: 1;
+
+  font-weight: 850;
+
+}
+
+.result-percent {
+
+  text-align: right;
+
+  font-size: 28px;
+
+  font-weight: 850;
+
+}
+
+.result-sub {
+
+  margin-top: 3px;
+
+  color: #61718a;
+
+  font-size: 15px;
+
+}
+
+.passed {
+
+  background:
+    var(--greenBg);
+
+  border:
+    1px solid
+    #d8f1e2;
+
+}
+
+.passed .result-icon {
+
+  background:
+    var(--green);
+
+}
+
+.failed {
+
+  background:
+    var(--redBg);
+
+  border:
+    1px solid
+    #ffe0e0;
+
+}
+
+.failed .result-icon {
+
+  background:
+    var(--red);
+
+}
+
+.flaky {
+
+  background:
+    var(--yellowBg);
+
+  border:
+    1px solid
+    #f7e8bd;
+
+}
+
+.flaky .result-icon {
+
+  background:
+    var(--yellow);
+
+}
+
+/* ==========================================================
+   STATUS MESSAGE
+========================================================== */
+
+.message {
+
+  margin-top: 20px;
+
+  padding:
+    32px
+    42px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(
+      110deg,
+      #eafaf1,
+      #f7fdf9
+    );
+
+  border:
+    1px solid
+    #d8f1e2;
+
+}
+
+.message.failed-message {
+
+  background:
+    linear-gradient(
+      110deg,
+      #fff0f0,
+      #fff8f8
+    );
+
+  border-color:
+    #ffdcdc;
+
+}
+
+.message-icon {
+
+  width: 90px;
+
+  height: 90px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    var(--green);
+
+  color: white;
+
+  font-size: 55px;
+
+  font-weight: 900;
+
+}
+
+.failed-message
+.message-icon {
+
+  background:
+    var(--red);
+
+}
+
+.message-content {
+
+  flex: 1;
+
+}
+
+.message h2 {
+
+  margin:
+    0
+    0
+    6px;
+
+  font-size: 31px;
+
+  color:
+    var(--greenDark);
+
+}
+
+.failed-message h2 {
+
+  color:
+    #b42323;
+
+}
+
+.message-main {
+
+  margin: 0;
+
+  font-size: 20px;
+
+  font-weight: 750;
+
+}
+
+.message-sub {
+
+  margin:
+    7px
+    0
+    0;
+
+  color:
+    #60718a;
+
+  font-size: 17px;
+
+}
+
+.quote {
+
+  max-width: 310px;
+
+  padding-left: 28px;
+
+  border-left:
+    1px solid
+    #a9c8b6;
+
+  color:
+    #587069;
+
+  font-size: 18px;
+
+  font-style: italic;
+
+  line-height: 1.45;
+
+}
+
+.quote strong {
+
+  display: block;
+
+  margin-top: 9px;
+
+  color:
+    #168444;
+
+  font-style: normal;
+
+}
+
+/* ==========================================================
+   DETAILS
+========================================================== */
+
+.details-card {
+
+  margin-top: 20px;
+
+  padding: 28px;
+
+  border-radius: 22px;
+
+  background: white;
+
+  border:
+    1px solid
+    var(--border);
+
+}
+
+.danger-details {
+
+  border-left:
+    5px solid
+    var(--red);
+
+}
+
+.warning-details {
+
+  border-left:
+    5px solid
+    var(--yellow);
+
+}
+
+.details-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+
+}
+
+.eyebrow {
+
+  color:
+    #7a879b;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+}
+
+.details-header h2 {
+
+  margin:
+    3px
+    0
+    0;
+
+  font-size: 24px;
+
+}
+
+.badge {
+
+  padding:
+    7px
+    13px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+}
+
+.danger-badge {
+
+  background:
+    #fff0f0;
+
+  color:
+    #c62828;
+
+}
+
+.warning-badge {
+
+  background:
+    #fff7df;
+
+  color:
+    #9a6800;
+
+}
+
+.test-list {
+
+  display: grid;
+
+  gap: 10px;
+
+}
+
+.test-row {
+
+  display: flex;
+
+  gap: 13px;
+
+  padding: 14px;
+
+  border-radius: 13px;
+
+  background:
+    #f8fafc;
+
+}
+
+.test-index {
+
+  width: 30px;
+
+  height: 30px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    #e8eef6;
+
+  color:
+    #52647d;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+}
+
+.test-content {
+
+  min-width: 0;
+
+}
+
+.test-title {
+
+  font-weight: 750;
+
+  word-break: break-word;
+
+}
+
+.test-meta {
+
+  margin-top: 4px;
+
+  color:
+    #6a7890;
+
+  font-size: 13px;
+
+}
+
+.error-text {
+
+  margin-top: 9px;
+
+  padding:
+    9px
+    11px;
+
+  border-radius: 8px;
+
+  background:
+    #fff0f0;
+
+  color:
+    #9f3030;
+
+  font-family:
+    monospace;
+
+  font-size: 12px;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.action {
+
+  margin-top: 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.report-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    13px
+    22px;
+
+  border-radius: 12px;
+
+  background:
+    var(--navy);
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 750;
+
+}
+
+.report-button:hover {
+
+  opacity: .9;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer {
+
+  margin-top: 30px;
+
+  margin-left: -28px;
+
+  margin-right: -28px;
+
+  min-height: 125px;
+
+  padding:
+    28px
+    45px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 25px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      105deg,
+      #102e59,
+      #285384
+    );
+
+  border-radius:
+    26px
+    26px
+    0
+    0;
+
+}
+
+.footer-logo {
+
+  font-size: 37px;
+
+  font-weight: 950;
+
+  letter-spacing: -4px;
+
+  color:
+    #1ab5e9;
+
+}
+
+.footer-logo span {
+
+  color:
+    #ed1b58;
+
+}
+
+.footer-team {
+
+  margin-top: 4px;
+
+  color:
+    #d9e6f6;
+
+  font-size: 17px;
+
+}
+
+.footer-middle {
+
+  color:
+    #cddbeb;
+
+  font-size: 15px;
+
+}
+
+.footer-right {
+
+  text-align: right;
+
+  color:
+    #dce7f5;
+
+  font-size: 15px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (
+  max-width: 1100px
+) {
+
+  .header {
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+  }
+
+  .date-card {
+
+    width: 100%;
+
+  }
+
+  .main-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+}
+
+@media (
+  max-width: 700px
+) {
+
+  .container {
+
+    padding:
+      18px
+      15px
+      0;
+
+  }
+
+  .brand {
+
+    align-items:
+      flex-start;
+
+  }
+
+  .divider {
+
+    height: 65px;
+
+  }
+
+  .logo {
+
+    font-size: 35px;
+
+  }
+
+  .title h1 {
+
+    font-size: 30px;
+
+  }
+
+  .title h2 {
+
+    font-size: 22px;
+
+  }
+
+  .donut {
+
+    width: 290px;
+
+  }
+
+  .result {
+
+    min-height: 120px;
+
+    padding: 20px;
+
+  }
+
+  .result-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    font-size: 31px;
+
+  }
+
+  .result-percent {
+
+    font-size: 22px;
+
+  }
+
+  .message {
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+    padding:
+      25px;
+
+  }
+
+  .quote {
+
+    max-width: none;
+
+    border-left: 0;
+
+    border-top:
+      1px solid
+      #a9c8b6;
+
+    padding:
+      20px
+      0
+      0;
+
+  }
+
+  .footer {
+
+    margin-left: -15px;
+
+    margin-right: -15px;
+
+    padding: 25px;
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+  }
+
+  .footer-right {
+
+    text-align:
+      left;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ======================================================
+     HEADER
+======================================================= -->
+
+<header class="header">
+
+  <div class="brand">
+
+    <div>
+
+      <div class="logo">
+        RCTI<span>+</span>
+      </div>
+
+      <div class="logo-sub">
+        DIGITAL ENTERTAINMENT
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="title">
+
+      <h1>
+        Test Automation Report
+      </h1>
+
+      <h2>
+        Web Desktop
+      </h2>
+
+      <div class="subtitle">
+        Quality Today
+        &nbsp; | &nbsp;
+        A Better Tomorrow
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="date-card">
+
+    <div class="date-top">
+
+      <div class="calendar-icon">
+        📅
+      </div>
+
+      <div>
+
+        <div class="date-label">
+          Execution Date
+        </div>
+
+        <div class="date-value">
+          18 September 2026
+        </div>
+
+        <div class="date-label">
+          11:10:55
+          WIB
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ======================================================
+     MAIN
+======================================================= -->
+
+<main class="main-grid">
+
+
+<!-- LEFT CARD -->
+
+<section class="card info-card">
+
+
+  <div class="info-item">
+
+    <div class="info-icon">
+      👩‍💻
+    </div>
+
+    <div>
+
+      <div class="info-label">
+        Executed By
+      </div>
+
+      <div class="info-value">
+        Reny
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="info-item">
+
+    <div class="info-icon">
+      🌐
+    </div>
+
+    <div>
+
+      <div class="info-label">
+        Browser / Device
+      </div>
+
+      <div class="info-value">
+        Chrome (Desktop)
+      </div>
+
+      <div class="project-pill">
+        Project:
+        chrome
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="info-item">
+
+    <div class="info-icon">
+      ⏱
+    </div>
+
+    <div>
+
+      <div class="info-label">
+        Duration
+      </div>
+
+      <div class="info-value">
+        3.5 min
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="info-item">
+
+    <div class="info-icon">
+      📊
+    </div>
+
+    <div>
+
+      <div class="info-label">
+        Total Tests
+      </div>
+
+      <div class="info-value">
+        57
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="info-item">
+
+    <div class="info-icon">
+      🕐
+    </div>
+
+    <div>
+
+      <div class="info-label">
+        Date & Time
+      </div>
+
+      <div class="info-value">
+        18 September 2026
+      </div>
+
+      <div class="info-value">
+        11:10:55
+        WIB
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+<!-- CENTER CARD -->
+
+<section class="card chart-card">
+
+  <div class="chart-heading">
+    Test Execution Overview
+  </div>
+
+
+  <div
+    class="donut"
+    aria-label="
+      91.2
+      percent pass rate
+    "
+  >
+
+    <div class="donut-content">
+
+      <div class="donut-number">
+        57
+      </div>
+
+      <div class="donut-label">
+        Total Tests
+      </div>
+
+      <div class="donut-rate">
+        91.2%
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="legend">
+
+
+    <div class="legend-item">
+
+      <span
+        class="dot dot-green"
+      ></span>
+
+      <b>Passed</b>
+
+      52
+
+      (91.2%)
+
+    </div>
+
+
+    <div class="legend-item">
+
+      <span
+        class="dot dot-red"
+      ></span>
+
+      <b>Failed</b>
+
+      2
+
+      (3.5%)
+
+    </div>
+
+
+    <div class="legend-item">
+
+      <span
+        class="dot dot-yellow"
+      ></span>
+
+      <b>Flaky</b>
+
+      3
+
+      (5.3%)
+
+    </div>
+
+
+    <div class="legend-item">
+
+      <span
+        class="dot dot-gray"
+      ></span>
+
+      <b>Skipped</b>
+
+      0
+
+      (0.0%)
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- RIGHT CARDS -->
+
+<section class="result-column">
+
+
+  <!-- PASSED -->
+
+  <div class="result passed">
+
+    <div class="result-left">
+
+      <div class="result-icon">
+        ✓
+      </div>
+
+      <div>
+
+        <div class="result-title">
+          Passed
+        </div>
+
+        <div class="result-number">
+          52
+        </div>
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="result-percent">
+        91.2%
+      </div>
+
+      <div class="result-sub">
+        Pass Rate
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FAILED -->
+
+  <div class="result failed">
+
+    <div class="result-left">
+
+      <div class="result-icon">
+        ×
+      </div>
+
+      <div>
+
+        <div class="result-title">
+          Failed
+        </div>
+
+        <div class="result-number">
+          2
+        </div>
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="result-percent">
+        3.5%
+      </div>
+
+      <div class="result-sub">
+        Failure Rate
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FLAKY -->
+
+  <div class="result flaky">
+
+    <div class="result-left">
+
+      <div class="result-icon">
+        ~
+      </div>
+
+      <div>
+
+        <div class="result-title">
+          Flaky
+        </div>
+
+        <div class="result-number">
+          3
+        </div>
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="result-percent">
+        5.3%
+      </div>
+
+      <div class="result-sub">
+        Flaky Rate
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+</main>
+
+
+<!-- ======================================================
+     STATUS
+======================================================= -->
+
+<section
+  class="
+    message
+    failed-message
+  "
+>
+
+
+  <div class="message-icon">
+
+    ×
+
+  </div>
+
+
+  <div class="message-content">
+
+    <h2>
+
+      Attention Required
+
+    </h2>
+
+
+    <p class="message-main">
+
+      2 automated test(s) failed.
+
+    </p>
+
+
+    <p class="message-sub">
+
+      Please review the detailed Playwright report and investigate the affected scenarios.
+
+    </p>
+
+  </div>
+
+
+  <div class="quote">
+
+    "Quality is not an act,
+    but a habit."
+
+    <strong>
+      — Aristotle
+    </strong>
+
+  </div>
+
+
+</section>
+
+
+<!-- FAILED DETAILS -->
+
+
+
+
+<!-- FLAKY DETAILS -->
+
+
+
+
+<!-- ======================================================
+     BUTTON
+======================================================= -->
+
+<div class="action">
+
+  <a
+    class="report-button"
+    href="../playwright-report/"
+    target="_blank"
+    rel="noopener"
+  >
+
+    📊
+    View Detailed Playwright Report
+
+  </a>
+
+</div>
+
+
+<!-- ======================================================
+     FOOTER
+======================================================= -->
+
+<footer class="footer">
+
+
+  <div>
+
+    <div class="footer-logo">
+
+      RCTI<span>+</span>
+
+    </div>
+
+    <div class="footer-team">
+
+      Quality Assurance Team
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-middle">
+
+    Automate
+    &nbsp; • &nbsp;
+    Validate
+    &nbsp; • &nbsp;
+    Deliver
+    &nbsp; • &nbsp;
+    Together
+
+  </div>
+
+
+  <div class="footer-right">
+
+    <div>
+      Better Quality
+    </div>
+
+    <div>
+      Brighter Entertainment
+    </div>
+
+  </div>
+
+
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

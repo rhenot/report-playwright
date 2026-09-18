@@ -1,7 +1,7 @@
 const { execSync, exec } = require('child_process');
 
 const WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL || '';
-const CHANNEL = process.env.SLACK_CHANNEL || '#report-automate';
+const CHANNEL = process.env.SLACK_CHANNEL || '#reny-report';
 
 async function main() {
   console.log('🚀 Starting Playwright HTML report server...\n');

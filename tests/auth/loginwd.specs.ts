@@ -3,9 +3,11 @@ import { LoginPage } from '../../Pages/LoginPage';
 
 const VALID_EMAIL = 'reny.la28@gmail.com';
 const VALID_PASSWORD = 'Rplus123456';
+const DESKTOP_PROJECTS = ['chrome', 'firefox', 'safari'];
+const isNonDesktop = () => !DESKTOP_PROJECTS.includes(test.info().project.name);
 
 test.describe('Login Page - UI Verification', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -89,7 +91,7 @@ test.describe('Login Page - UI Verification', () => {
 });
 
 test.describe('Login Page - Positive Flow', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test('User can login with valid credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -107,7 +109,7 @@ test.describe('Login Page - Positive Flow', () => {
 });
 
 test.describe('Login Page - Negative Flow', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -175,7 +177,7 @@ test.describe('Login Page - Negative Flow', () => {
 });
 
 test.describe('Login Page - Input Validation', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -240,7 +242,7 @@ test.describe('Login Page - Input Validation', () => {
 });
 
 test.describe('Login Page - Keyboard Navigation', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -249,7 +251,7 @@ test.describe('Login Page - Keyboard Navigation', () => {
 });
 
 test.describe('Login Page - Navigation', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test('Forgot password link navigates to correct page', async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -302,7 +304,7 @@ test.describe('Login Page - Navigation', () => {
 });
 
 test.describe('Login Page - Error Handling', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test('Error message appears after failed login attempt', async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -349,7 +351,7 @@ test.describe('Login Page - Error Handling', () => {
 });
 
 test.describe('Login Page - Security', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test('Password is not visible in URL after login attempt', async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -391,7 +393,7 @@ test.describe('Login Page - Security', () => {
 });
 
 test.describe('Login Page - Responsive Design', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test('Login page renders correctly on tablet viewport', async ({ page }) => {
     await page.setViewportSize({ width: 768, height: 1024 });
@@ -411,7 +413,7 @@ test.describe('Login Page - Responsive Design', () => {
 });
 
 test.describe('Login Page - Accessibility', () => {
-  test.skip(({ isMobile }) => isMobile, 'Desktop only test');
+  test.skip(isNonDesktop, 'Desktop only test');
 
   test('Password input has associated label', async ({ page }) => {
     const loginPage = new LoginPage(page);
