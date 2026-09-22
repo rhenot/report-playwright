@@ -6,8 +6,8 @@
 
 # Test info
 
-- Name: auth/loginwd.specs.ts >> Login Page - UI Verification >> Password label is visible
-- Location: tests/auth/loginwd.specs.ts:35:7
+- Name: auth/loginwd.specs.ts >> Login Page - UI Verification >> Privacy Policy link is visible
+- Location: tests/auth/loginwd.specs.ts:75:7
 
 # Error details
 

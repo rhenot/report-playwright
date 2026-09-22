@@ -12,6 +12,10 @@
 # Error details
 
 ```
+Test timeout of 60000ms exceeded while running "beforeEach" hook.
+```
+
+```
 Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login
 Call log:
   - navigating to "https://www.rctiplus.com/login", waiting until "load"
