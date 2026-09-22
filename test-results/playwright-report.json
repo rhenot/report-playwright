@@ -1,0 +1,2776 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/qcrcti/Documents/WebD-pw/node_modules/.bin/playwright",
+      "test",
+      "tests/auth/loginwd.specs.ts",
+      "--project=chrome"
+    ],
+    "configFile": "/Users/qcrcti/Documents/WebD-pw/playwright.config.ts",
+    "rootDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "safari",
+        "name": "safari",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-iphone-15-pro",
+        "name": "mobile-iphone-15-pro",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-iphone-se",
+        "name": "mobile-iphone-se",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-galaxy-s24",
+        "name": "mobile-galaxy-s24",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-galaxy-z-fold7",
+        "name": "mobile-galaxy-z-fold7",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-pixel-9-pro",
+        "name": "mobile-pixel-9-pro",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "tablet-ipad-pro",
+        "name": "tablet-ipad-pro",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "tablet-galaxy-tab-s9",
+        "name": "tablet-galaxy-tab-s9",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-iphone-17",
+        "name": "mobile-iphone-17",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/qcrcti/Documents/WebD-pw/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-safari-iphone",
+        "name": "mobile-safari-iphone",
+        "testDir": "/Users/qcrcti/Documents/WebD-pw/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.{spec,specs,test}.{ts,js}"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/playwright-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth/loginwd.specs.ts",
+      "file": "auth/loginwd.specs.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page - UI Verification",
+          "file": "auth/loginwd.specs.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login page loads successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 32039,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:51:47.365Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 60682,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:12:8",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts",
+                          "column": 8,
+                          "line": 12
+                        },
+                        "snippet": "  10 |   test.skip(isNonDesktop, 'Desktop only test');\n  11 |\n> 12 |   test.beforeEach(async ({ page }) => {\n     |        ^\n  13 |     const loginPage = new LoginPage(page);\n  14 |     await loginPage.goto();\n  15 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts",
+                            "column": 8,
+                            "line": 12
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  10 |   test.skip(isNonDesktop, 'Desktop only test');\n  11 |\n> 12 |   test.beforeEach(async ({ page }) => {\n     |        ^\n  13 |     const loginPage = new LoginPage(page);\n  14 |     await loginPage.goto();\n  15 |   });\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:12:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-22T09:52:20.464Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-e7ced-gin-page-loads-successfully-chrome-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts",
+                        "column": 8,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-d9a64048f67fe523c31a",
+              "file": "auth/loginwd.specs.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "Email/phone input and password input are visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 32070,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:51:47.362Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-9a119--password-input-are-visible-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-9a119--password-input-are-visible-chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-9a119--password-input-are-visible-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-9a119--password-input-are-visible-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5294,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-22T09:52:20.469Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-e5a1a6942fc2a1655b0e",
+              "file": "auth/loginwd.specs.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "Email input has correct placeholder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 32088,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:51:47.346Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-60e8e-put-has-correct-placeholder-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-60e8e-put-has-correct-placeholder-chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-60e8e-put-has-correct-placeholder-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-60e8e-put-has-correct-placeholder-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5244,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-22T09:52:20.479Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-1fc8d40f26d7fa28991b",
+              "file": "auth/loginwd.specs.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "Email/Phone label is visible",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 32095,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:51:47.378Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 31389,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-22T09:52:20.478Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-ca947-mail-Phone-label-is-visible-chrome-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-d8c9e0a07d0ab388de04",
+              "file": "auth/loginwd.specs.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "Password label is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 31310,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:52:25.976Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-1a84b-n-Password-label-is-visible-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-1a84b-n-Password-label-is-visible-chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-1a84b-n-Password-label-is-visible-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-1a84b-n-Password-label-is-visible-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 31367,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-22T09:52:57.550Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-13fd0d72a267eadeac57",
+              "file": "auth/loginwd.specs.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "Login button is visible but disabled when fields are empty",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 30249,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:52:26.023Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 31149,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21",
+                        "location": {
+                          "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                          "column": 21,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                            "column": 21,
+                            "line": 20
+                          },
+                          "message": "Error: page.goto: net::ERR_TIMED_OUT at https://www.rctiplus.com/login\nCall log:\n\u001b[2m  - navigating to \"https://www.rctiplus.com/login\", waiting until \"load\"\u001b[22m\n\n\n   at ../Pages/LoginPage.ts:20\n\n  18 |\n  19 |   async goto() {\n> 20 |     await this.page.goto('/login');\n     |                     ^\n  21 |     await this.page.waitForLoadState('domcontentloaded');\n  22 |   }\n  23 |\n    at LoginPage.goto (/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts:20:21)\n    at /Users/qcrcti/Documents/WebD-pw/tests/auth/loginwd.specs.ts:14:21"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-22T09:52:56.568Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/qcrcti/Documents/WebD-pw/test-results/auth-loginwd.specs.ts-Logi-5ab0b-abled-when-fields-are-empty-chrome-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/qcrcti/Documents/WebD-pw/Pages/LoginPage.ts",
+                        "column": 21,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-baf057cc2be0e52ddc44",
+              "file": "auth/loginwd.specs.ts",
+              "line": 40,
+              "column": 7
+            },
+            {
+              "title": "Login button has correct text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 31313,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:52:52.431Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-275286da9805753af074",
+              "file": "auth/loginwd.specs.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "Google sign-in button is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2857,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:21.709Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-fe01264e6fa2ecb6325a",
+              "file": "auth/loginwd.specs.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "Google sign-in button has correct text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4656,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:23.910Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-2b5218c3bbf27077dbb6",
+              "file": "auth/loginwd.specs.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "Forgot password link is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 32256,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:24.715Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-d5e26f178559610306e3",
+              "file": "auth/loginwd.specs.ts",
+              "line": 60,
+              "column": 7
+            },
+            {
+              "title": "Register link is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5381,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:28.159Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-d2591c3367f213522aae",
+              "file": "auth/loginwd.specs.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "Terms & Conditions link is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 34262,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:28.579Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-886064bea7be6be73e6d",
+              "file": "auth/loginwd.specs.ts",
+              "line": 70,
+              "column": 7
+            },
+            {
+              "title": "Privacy Policy link is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6000,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:29.045Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-136168b7eb2a693108bd",
+              "file": "auth/loginwd.specs.ts",
+              "line": 75,
+              "column": 7
+            },
+            {
+              "title": "No error message shown on initial page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5711,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:33.719Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-cf652acaaeddc89dce55",
+              "file": "auth/loginwd.specs.ts",
+              "line": 80,
+              "column": 7
+            },
+            {
+              "title": "Login Account heading is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4425,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:35.060Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-29b1d28d632784b0f8fb",
+              "file": "auth/loginwd.specs.ts",
+              "line": 84,
+              "column": 7
+            },
+            {
+              "title": "Social media icons are visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4596,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:39.441Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-0ea80a075a3c6475fddc",
+              "file": "auth/loginwd.specs.ts",
+              "line": 88,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Positive Flow",
+          "file": "auth/loginwd.specs.ts",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "User can login with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7223,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:39.495Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-8e355c1f7fb62669d6ba",
+              "file": "auth/loginwd.specs.ts",
+              "line": 96,
+              "column": 7
+            },
+            {
+              "title": "User is redirected to homepage after successful login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7986,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:44.052Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-dfb0a879b950aed124bf",
+              "file": "auth/loginwd.specs.ts",
+              "line": 103,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Negative Flow",
+          "file": "auth/loginwd.specs.ts",
+          "line": 111,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login fails with invalid email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5361,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:46.730Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-13f6c7129537209b1343",
+              "file": "auth/loginwd.specs.ts",
+              "line": 119,
+              "column": 7
+            },
+            {
+              "title": "Login fails with wrong password shows error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6759,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:52.051Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-f9807337d05c5d95667e",
+              "file": "auth/loginwd.specs.ts",
+              "line": 125,
+              "column": 7
+            },
+            {
+              "title": "Login fails with non-existent email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6838,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:52.105Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-3be85a624b3cb4a4eb6a",
+              "file": "auth/loginwd.specs.ts",
+              "line": 132,
+              "column": 7
+            },
+            {
+              "title": "Login button becomes enabled after filling email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5531,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:56.982Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-6cc8fd33c54affc940d6",
+              "file": "auth/loginwd.specs.ts",
+              "line": 138,
+              "column": 7
+            },
+            {
+              "title": "Login button remains disabled when only password is filled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6307,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:58.821Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-b6aeb8b54d3f352906e9",
+              "file": "auth/loginwd.specs.ts",
+              "line": 145,
+              "column": 7
+            },
+            {
+              "title": "Login button remains disabled when only email is filled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7493,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:53:58.955Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-fc709df430799aadc130",
+              "file": "auth/loginwd.specs.ts",
+              "line": 151,
+              "column": 7
+            },
+            {
+              "title": "Login button remains disabled with password less than 8 characters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9298,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:02.536Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-c0df9e6019b60c145cc2",
+              "file": "auth/loginwd.specs.ts",
+              "line": 157,
+              "column": 7
+            },
+            {
+              "title": "Login button enabled with password exactly 8 characters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8469,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:02.853Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-1d2623a011fd5497c4a6",
+              "file": "auth/loginwd.specs.ts",
+              "line": 164,
+              "column": 7
+            },
+            {
+              "title": "Login button enabled with password more than 8 characters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11273,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:05.149Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-3b06b8b4d801d4d161d4",
+              "file": "auth/loginwd.specs.ts",
+              "line": 171,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Input Validation",
+          "file": "auth/loginwd.specs.ts",
+          "line": 179,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Email input accepts valid email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8891,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:06.463Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-bc4ff2ec6a4fe8e71ee0",
+              "file": "auth/loginwd.specs.ts",
+              "line": 187,
+              "column": 7
+            },
+            {
+              "title": "Email input accepts phone number format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6410,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:11.336Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-38d715e1eebcdf333575",
+              "file": "auth/loginwd.specs.ts",
+              "line": 193,
+              "column": 7
+            },
+            {
+              "title": "Password input masks characters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6601,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:11.864Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-9c4007a6faea09b356ce",
+              "file": "auth/loginwd.specs.ts",
+              "line": 199,
+              "column": 7
+            },
+            {
+              "title": "Input fields can be cleared and refilled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11648,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:15.368Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-3f104788cdf1b649b9d9",
+              "file": "auth/loginwd.specs.ts",
+              "line": 205,
+              "column": 7
+            },
+            {
+              "title": "Special characters accepted in password field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6207,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:16.436Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-704c917f0aa287dca2d7",
+              "file": "auth/loginwd.specs.ts",
+              "line": 212,
+              "column": 7
+            },
+            {
+              "title": "Email input accepts email with plus sign",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8765,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:17.760Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-a6480941920441938230",
+              "file": "auth/loginwd.specs.ts",
+              "line": 218,
+              "column": 7
+            },
+            {
+              "title": "Email input accepts email with dots",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16897,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:18.484Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-8559dcde6d89fd3eb780",
+              "file": "auth/loginwd.specs.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "Password field accepts spaces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5606,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:22.656Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-3af67518915bab9a37ac",
+              "file": "auth/loginwd.specs.ts",
+              "line": 230,
+              "column": 7
+            },
+            {
+              "title": "Password field handles unicode characters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:26.539Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-f1b65129dee0c2508bb5",
+              "file": "auth/loginwd.specs.ts",
+              "line": 237,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Navigation",
+          "file": "auth/loginwd.specs.ts",
+          "line": 253,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Forgot password link navigates to correct page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7665,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:27.027Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-c4809f7bfc383ee0f99d",
+              "file": "auth/loginwd.specs.ts",
+              "line": 256,
+              "column": 7
+            },
+            {
+              "title": "Register link navigates to correct page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6547,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:28.277Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-c177a05448ba57f7b8fe",
+              "file": "auth/loginwd.specs.ts",
+              "line": 263,
+              "column": 7
+            },
+            {
+              "title": "Terms & Conditions link navigates to correct page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10475,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:34.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-47f15c51064d3f677b8f",
+              "file": "auth/loginwd.specs.ts",
+              "line": 270,
+              "column": 7
+            },
+            {
+              "title": "Privacy Policy link navigates to correct page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 10893,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:34.717Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-dd06e3d8bb997f6ee5d2",
+              "file": "auth/loginwd.specs.ts",
+              "line": 277,
+              "column": 7
+            },
+            {
+              "title": "Google login button navigates to Google auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10155,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:34.836Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-8b840665d126ee79c755",
+              "file": "auth/loginwd.specs.ts",
+              "line": 284,
+              "column": 7
+            },
+            {
+              "title": "Forgot password link opens in same tab",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6982,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:35.394Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-d3bc0d4caa5732813408",
+              "file": "auth/loginwd.specs.ts",
+              "line": 291,
+              "column": 7
+            },
+            {
+              "title": "Register link opens in same tab",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9917,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:42.387Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-5002c4d13cb84512a0a3",
+              "file": "auth/loginwd.specs.ts",
+              "line": 298,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Error Handling",
+          "file": "auth/loginwd.specs.ts",
+          "line": 306,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Error message appears after failed login attempt",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7621,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:45.002Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-5df7ea288e57d23afc4e",
+              "file": "auth/loginwd.specs.ts",
+              "line": 309,
+              "column": 7
+            },
+            {
+              "title": "Error message contains relevant text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8134,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:45.198Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-2b9e9de3c069068fe696",
+              "file": "auth/loginwd.specs.ts",
+              "line": 316,
+              "column": 7
+            },
+            {
+              "title": "Error message is displayed in a visible alert box",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 37895,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:45.630Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-d88a95b0f65b98adc6dc",
+              "file": "auth/loginwd.specs.ts",
+              "line": 323,
+              "column": 7
+            },
+            {
+              "title": "Error message has red/pink background color",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6946,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:52.317Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-c3c6666d7d67ceb80a36",
+              "file": "auth/loginwd.specs.ts",
+              "line": 333,
+              "column": 7
+            },
+            {
+              "title": "Form fields are cleared after failed login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11864,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:52.635Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-37783a9c7a850e7ed8b4",
+              "file": "auth/loginwd.specs.ts",
+              "line": 343,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Security",
+          "file": "auth/loginwd.specs.ts",
+          "line": 353,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Password is not visible in URL after login attempt",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10648,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:53.348Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-53b48a90183540cee78f",
+              "file": "auth/loginwd.specs.ts",
+              "line": 356,
+              "column": 7
+            },
+            {
+              "title": "Form uses POST method for submission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4702,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:54:59.279Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-14158280d4a2f2a1fbb7",
+              "file": "auth/loginwd.specs.ts",
+              "line": 365,
+              "column": 7
+            },
+            {
+              "title": "CSRF token is present in form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6994,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:55:03.996Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-e1c15ec919ed3875c3ec",
+              "file": "auth/loginwd.specs.ts",
+              "line": 372,
+              "column": 7
+            },
+            {
+              "title": "Password field has autocomplete off or appropriate setting",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:55:04.006Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-850ca4f87e3af236c868",
+              "file": "auth/loginwd.specs.ts",
+              "line": 380,
+              "column": 7
+            },
+            {
+              "title": "Form action points to login endpoint",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5989,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:55:04.510Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-64f1f2aed66fa2e013b1",
+              "file": "auth/loginwd.specs.ts",
+              "line": 387,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Responsive Design",
+          "file": "auth/loginwd.specs.ts",
+          "line": 395,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login page renders correctly on tablet viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5952,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:55:10.307Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-816e45ebf69aaf2b4f88",
+              "file": "auth/loginwd.specs.ts",
+              "line": 398,
+              "column": 7
+            },
+            {
+              "title": "Login page renders correctly on desktop viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7056,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:55:10.510Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-5f5d868a20222a0afd18",
+              "file": "auth/loginwd.specs.ts",
+              "line": 406,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login Page - Accessibility",
+          "file": "auth/loginwd.specs.ts",
+          "line": 415,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Password input has associated label",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6886,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:55:11.005Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-999c047a1f5c6f5e00dc",
+              "file": "auth/loginwd.specs.ts",
+              "line": 418,
+              "column": 7
+            },
+            {
+              "title": "Login button is clickable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4854,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T09:55:16.269Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a71e4e2eb87555f26f1-0668e81b36eae9cf2f80",
+              "file": "auth/loginwd.specs.ts",
+              "line": 425,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-22T09:51:46.892Z",
+    "duration": 216690.102,
+    "expected": 51,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 3
+  }
+}
